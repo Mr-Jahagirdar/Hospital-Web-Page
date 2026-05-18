@@ -15,7 +15,7 @@ app.use(rateLimiter);
 
 app.use('/api/chatbot', chatbotRoutes);
 
-const PORT = https://hospital-web-page1.onrender.com/;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 
